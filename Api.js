@@ -16,7 +16,7 @@ export class Api{
     //Funciones de un servidor
     //1. Iniciar el servidor
     iniciarServidor(){
-        this.app.listen(3000, function(){
+        this.app.listen(process.env.PORT, function(){
             console.log("Servidor operando")
        })
        
